@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="text-center mt-4 name">
+        Sign In
+    </div>
+    <form class="p-3 mt-3" [formGroup]="form">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="email" id="email" placeholder="Email" formControlName="email">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" name="password" id="pwd" placeholder="Password" formControlName="password">
+        </div>
+        <button class="btn mt-3" (click)="signIn()">Login</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a routerLink="/sign-up">Sign up</a>
+    </div>
+</div>
